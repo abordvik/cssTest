@@ -1,0 +1,54 @@
+body{
+    background: -webkit-linear-gradient(green 20%, yellowgreen 55%, red 90%);
+    padding-left: 50px;
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
+    background: -webkit-radial-gradient(yellow, slategray, green);
+    background: radial-gradient(yellow, slategray, green);
+    text-shadow: 8px 10px 9px #FF0000;
+}
+h1:hover {
+    text-shadow: 5px 5px 5px #ff21f4;
+    font-size: 2em;
+}
+img {
+    vertical-align: bottom;
+    float: inherit;
+}
+img.scaled:hover {
+    -webkit-transform : scale(2);
+    transform : scale(2);
+    -webkit-border : 5px solid;
+    border : 5px solid;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 5px #888888;
+    box-shadow: 10px 10px 5px #888888;
+    float: right; /*this is going to be messy */
+
+}
+
+img.rotate:hover {
+    -webkit-transform : rotate(45deg);
+    transform : rotate(45 deg);
+    background-image : url("");
+    margin-bottom : 10px;
+    /*  NOT WORKING
+    width : 150px;
+    height : 150px;
+    display : block;
+    background-image: url("http://www.aditif.com/wp-content/uploads/2012/04/Owl-icons-used-to-represent-knowledge-1024x944.jpg");
+    */
+}
+
+img.translate:hover {
+     -webkit-transform : translate(100px, 50px);
+     transform : translate(100px, 50px);
+ }
+img.skew:hover {
+    -webkit-transform : skew(20deg, 50deg);
+    transform : skew(20deg, 50deg);
+    opacity: 0.33;
+}
